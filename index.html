@@ -10,19 +10,73 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      font-size:  15px;
+
+    }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+    #parent-container{
+      background-color: hsl(212, 45%, 89%);
+      width: 100%;
+      height: 100vh;
+      padding: 10% 40%;
+
+    }
+    .card{
+     background-color: hsl(0, 0%, 100%);
+     width: 20%;
+     padding: 1%;
+     border-radius: 20px;
+     text-align: center;
+    }
+    .card img{
+      width: 100%;
+      border-radius: 20px;
+    }
+    .bold-text{
+      font-weight: 700;
+    }
+    .muted{
+      color:hsl(220, 15%, 55%);
+      font-weight: 400;
+    }
+    p{
+      margin: 5%;
+      font-size: 15px;
+    }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <!-- BEGIN PARENT CONTAINER DIV -->
+<div id="parent-container">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <!-- BEGIN OF OUTER CARD CONTAINER DIV  -->
+  <div class="card">
+    <!-- QR CODE IMAGE  -->
+    <img src="images/image-qr-code.png"/>
+
+    <!-- BOLD TEXT  -->
+    <p class="bold-text">
+    Improve your front-end skills by building projects
+    </p>
+    <!-- LESS BOLD TEXT  -->
+    <p class="muted">
+      Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </p>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  
   </div>
+  <!-- END OF OUTER CARD CONTAINER DIV  -->
+</div>
+<!-- END OF PARENT CONTAINER DIV  -->
 </body>
 </html>
